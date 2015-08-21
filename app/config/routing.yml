@@ -1,0 +1,26 @@
+
+foo_news_show:
+    pattern:  /news/{id}
+    defaults: { _controller: FooNewsBundle:Default:show }
+    requirements:
+        id:  \d+
+
+foo_news_home:
+    pattern:  /news/
+    defaults: { _controller: FooNewsBundle:Default:index }
+    
+foo_news_add:
+    pattern:  /news/add/
+    defaults: { _controller: FooNewsBundle:Default:add }
+
+foo_news_edit:
+    pattern:  /news/{id}/edit
+    defaults: { _controller: FooNewsBundle:Default:edit }
+    requirements:
+        id:  \d+
+        
+foo_news_delete:
+    pattern:  /news/{id}/delete/
+    defaults: { _controller: FooNewsBundle:Default:delete }
+    requirements:
+        id:  \d+

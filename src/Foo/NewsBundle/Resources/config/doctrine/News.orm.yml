@@ -1,0 +1,19 @@
+Foo\NewsBundle\Entity\News:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '255'
+        body:
+            type: text
+        createdDate:
+            type: datetime
+            column: created_date
+    lifecycleCallbacks: {  }
